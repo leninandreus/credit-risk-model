@@ -10,7 +10,7 @@ from src.features.preprocessing import build_preprocessor
 RANDOM_STATE = 42
 SCALE_POS_WEIGHT = 14
 
-def buil_logistic_pipeline() -> Pipeline:
+def build_logistic_pipeline() -> Pipeline:
     pipeline = Pipeline(steps=[
         ("preprocessor", build_preprocessor()),
         ("scaler", StandardScaler()),
