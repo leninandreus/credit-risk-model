@@ -1,4 +1,3 @@
-````markdown
 # Modelo de Riesgo Crediticio
 
 Proyecto de Machine Learning para estimar la probabilidad de que un cliente presente una mora grave durante los próximos dos años.
@@ -76,7 +75,7 @@ credit-risk-model/
 ├── models/
 ├── requirements.txt
 └── README.md
-````
+```
 
 ---
 
@@ -117,7 +116,7 @@ python -m src.models.train_final_model
 El pipeline completo de preprocesamiento y XGBoost se guarda en:
 
 ```text
-models/xboost_final.joblib
+models/xgboost_final.joblib
 ```
 
 ---
@@ -133,6 +132,3 @@ models/xboost_final.joblib
 **Lenin Oñate**
 
 [LinkedIn](https://www.linkedin.com/in/lenin11/)
-
-```
-```
