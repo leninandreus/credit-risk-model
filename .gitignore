@@ -1,17 +1,20 @@
-# Datos (licencia de Kaggle, no se versionan)
+#datos
 data/*.csv
 
-# Entornos virtuales
+#entornos virtuales
 .venv/
 venv/
 env/
 
-# Python
+#python
 __pycache__/
 *.py[cod]
 
-# Jupyter
+#jupyter
 .ipynb_checkpoints/
 
-# Sistema
+#distema
 .DS_Store
+
+#modelos entrenados
+models/*.joblib

@@ -1,5 +1,5 @@
 #archivo que realiza la carga de datos y la sepración de train y test
-
+from pathlib import Path
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -8,8 +8,15 @@ TARGET = "SeriousDlqin2yrs"
 RANDOM_STATE = 42
 TEST_SIZE = 0.20
 
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+DEFAULT_DATA_PATH = BASE_DIR / "data" / "cs-training.csv"
+
 #función que carga el dataset crudo sin índice
-def load_raw_data(path: str = "../data/cs-training.csv") -> pd.DataFrame:
+def load_raw_data(path=None) -> pd.DataFrame:
+    if path is None:
+        path = DEFAULT_DATA_PATH
+
     df = pd.read_csv(path, index_col=0)
     return df
 
